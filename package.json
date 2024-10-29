@@ -1,0 +1,50 @@
+{
+  "name": "zappwrite-ssr",
+  "version": "0.0.1",
+  "keywords": [
+    "astro",
+    "appwrite",
+    "ssr",
+    "integration"
+  ],
+  "author": "Zachary Handley",
+  "license": "MIT",
+  "description": "An Astro integration to deploy SSR Astro apps to Appwrite Functions.",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./appwrite-adapter": {
+      "types": "./dist/appwrite-adapter.d.cts",
+      "import": "./dist/appwrite-adapter.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "file-type": "^19.6.0",
+    "hono": "^4.6.7",
+    "node-appwrite": "^14.1.0",
+    "set-cookie-parser": "^2.7.1",
+    "tar": "^7.4.3",
+    "ulidx": "^2.4.1"
+  },
+  "peerDependencies": {
+    "astro": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.0",
+    "@types/set-cookie-parser": "^2.4.10",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca"
+}
