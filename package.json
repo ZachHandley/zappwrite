@@ -1,5 +1,5 @@
 {
-  "name": "zappwrite-ssr",
+  "name": "zappwrite",
   "version": "0.0.1",
   "keywords": [
     "astro",
@@ -9,7 +9,7 @@
   ],
   "author": "Zachary Handley",
   "license": "MIT",
-  "description": "An Astro integration to deploy SSR Astro apps to Appwrite Functions.",
+  "description": "An Astro integration to deploy Astro apps to Appwrite Functions.",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
